@@ -1,0 +1,18 @@
+TEX_BUILDER = xelatex
+
+DOCUMENT_BUILDER = latexmk
+DOCUMENT_BUILDER_FLAGS = \
+	-pdf \
+	-pdflatex="$(TEX_BUILDER)"
+
+ENGLISH_CV_FILENAME = english
+
+
+english-cv:
+	$(DOCUMENT_BUILDER) $(DOCUMENT_BUILDER_FLAGS) $(ENGLISH_CV_FILENAME).tex
+
+english-cv-preview:
+	$(DOCUMENT_BUILDER) $(DOCUMENT_BUILDER_FLAGS) -pvc $(ENGLISH_CV_FILENAME).tex
+
+clean:
+	$(DOCUMENT_BUILDER) -C

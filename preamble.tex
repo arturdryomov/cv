@@ -1,0 +1,72 @@
+\documentclass[a4paper, 10pt]{article}
+
+
+% Typography
+
+%% Enable typography stuff
+\usepackage[no-math]{fontspec}
+\defaultfontfeatures{Mapping = tex-text}
+
+
+% Polyglossia
+
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{russian}
+
+
+% Fonts
+
+\setromanfont{Linux Libertine}
+
+%% Headings
+
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
+
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\scshape\normalsize}
+\subsubsectionfont{\mdseries\upshape\large}
+
+
+% Page setup
+
+%% Pretty page setup
+\usepackage{geometry}
+
+%% Remove indentation
+\setlength\parindent{0em}
+
+%% Set line spacing
+\usepackage{setspace}
+\setstretch{1.1}
+
+
+% Colors
+
+\usepackage{xcolor}
+
+%% Tango color palette
+
+\definecolor{DarkSkyBlue}{HTML}{204A87}
+
+
+% PDF configuration
+
+%% * breaklinks — allow links to break across lines
+%% * xetex — backend
+%% * bookmarks — provide PDF bookmarks
+\usepackage[breaklinks, xetex, bookmarks]{hyperref}
+
+%% * linkcolor — local links
+%% * citecolor — citations
+%% * urlcolor — URLs
+\hypersetup {
+  colorlinks,
+  linkcolor = DarkSkyBlue,
+  citecolor = DarkSkyBlue,
+  urlcolor = DarkSkyBlue,
+}
+
+%% Don’t use Mono font for URLs
+\urlstyle{same}
