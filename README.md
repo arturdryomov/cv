@@ -1,5 +1,9 @@
 # CV
 
+## Reading
+
+You can download a PDF version of this CV [here](http://ming13.ru/docs/en/cv.pdf).
+
 ## Building
 
 You should have [TeX Live](http://www.tug.org/texlive/) installed.
