@@ -6,6 +6,7 @@ DOCUMENT_BUILDER_FLAGS = \
 	-pdflatex="$(TEX_BUILDER)"
 
 ENGLISH_CV_FILENAME = english
+RUSSIAN_CV_FILENAME = russian
 
 
 english-cv:
@@ -13,6 +14,12 @@ english-cv:
 
 english-cv-preview:
 	$(DOCUMENT_BUILDER) $(DOCUMENT_BUILDER_FLAGS) -pvc $(ENGLISH_CV_FILENAME).tex
+
+russian-cv:
+	$(DOCUMENT_BUILDER) $(DOCUMENT_BUILDER_FLAGS) $(RUSSIAN_CV_FILENAME).tex
+
+russian-cv-preview:
+	$(DOCUMENT_BUILDER) $(DOCUMENT_BUILDER_FLAGS) -pvc $(RUSSIAN_CV_FILENAME).tex
 
 clean:
 	$(DOCUMENT_BUILDER) -C

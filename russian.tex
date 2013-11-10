@@ -1,0 +1,172 @@
+\input{preamble}
+
+
+\newcommand{\person}{Артур Дрёмов}
+\newcommand{\subject}{CV}
+
+\hypersetup {
+  pdfauthor = {\person},
+  pdfcreator = {XeTeX},
+  pdfsubject = {\subject},
+  pdftitle = {\person~--- \subject}
+}
+
+
+\begin{document}
+
+  {\LARGE Артур Дрёмов} \\ [1em]
+  Разработчик приложений для ОС Android \\ [1.5em]
+
+  Новополоцк, Беларусь \\
+  \href{mailto:artur.dryomov@gmail.com}{artur.dryomov@gmail.com} \\
+
+
+  \section*{Навыки и умения}
+
+    \subsection*{Языки программирования}
+
+      \begin{itemize}
+
+        \item Java~--- разработка приложений для ОС Android.
+
+        \item Python~--- небольшие проекты, скрипты, утилиты.
+
+        \item C, C++~--- задания в университете (включая использование Qt).
+
+        \item Zsh, Bash~--- утилиты системного администрирования.
+
+        \item Haskell, Objective-C, Ruby~--- изучались для расширения кругозора.
+
+      \end{itemize}
+
+    \subsection*{Языки разметки}
+
+      \begin{itemize}
+
+        \item \TeX\ ~--- документы, заметки, отчёты, \href{https://github.com/ming13/cv/}{это CV}.
+
+        \item HTML/CSS~--- небольшие сайты и страницы.
+
+      \end{itemize}
+
+    \subsection*{Иные языки}
+
+      \begin{itemize}
+
+        \item SQL~--- PostgreSQL, MySQL и SQLite.
+
+      \end{itemize}
+
+    \subsection*{Вспомогательные средства}
+
+      \begin{itemize}
+
+        \item Git~--- использую каждый день для всех проектов, которыми занимаюсь.
+
+        \item Make, CMake, Maven, Gradle~--- стараюсь не зависеть от IDE.
+
+      \end{itemize}
+
+    \subsection*{Операционные системы}
+
+      \begin{itemize}
+
+        \item Linux~--- 5 лет в качестве основной ОС, Arch Linux~--- персональный выбор.
+
+        \item OS X~--- текущая основная ОС.
+
+      \end{itemize}
+
+
+  \section*{Образование}
+
+    Полоцкий государственный университет, Беларусь (2009~--- \dots) \\
+    Программное обеспечение информационных технологий
+
+
+  \section*{Языки}
+
+    \begin{itemize}
+
+      \item Русский~--- родной.
+
+      \item Английский~--- свободное чтение и письмо, разговорный на среднем уровне.
+
+    \end{itemize}
+
+
+  \section*{Профессиональный опыт}
+
+    \subsection*{Личные проекты}
+
+      \textbf{Bus Time}~--- доступно \href{https://play.google.com/store/apps/details?id=ru.ming13.bustime}{в Google Play} \\
+
+        Расписание автопарка города Новополоцка в виде мобильного приложения.
+        Первые версии не имели готовой базы расписаний, поэтому приложение
+        предоставляло возможность редактирования информации с последующей синхронизацией
+        с сервисом \href{https://dropbox.com}{Dropbox}. Текущая версия
+        предоставляет готовые данные о рейсах. Занимался дизайном, разработкой
+        и сбором информации, так как автопарк не имеет открытого API для доступа
+        к необходимым данным. \\
+
+      \textbf{Gambit}~--- доступно \href{https://play.google.com/store/apps/details?id=ru.ming13.gambit}{в Google Play}
+        и \href{https://github.com/ming13/gambit}{на GitHub} \\
+
+        Приложение, предназначенное для помощи изучения иностранных языков,
+        используя словарные карточки. Первые версии имели возможность
+        синхронизации с сервисом
+        \href{https://drive.google.com}{Google Drive}, текущая версия
+        не имеет данного функционала из-за изменений в API. Занимался дизайном
+        и разработкой. Данное приложение является открытым программным обеспечением
+        и доступно \href{https://github.com/ming13/gambit}{на GitHub},
+        служа в том числе примером моего подхода к организации исходного кода.
+
+    \subsection*{Университет, открытое ПО и иные проекты}
+
+      Наиболее значимыми проектами в рамках учебного процесса являются
+      \href{https://github.com/ming13/aequatio}{математическая утилита},
+      реализованная при помощи C++ и Qt, а также RESTful веб-сервер, реализованный
+      при помощи Python, SQLAlchemy, PostgreSQL и Flask. \\
+
+      Мной были реализованы и другие проекты в виде мобильных приложений,
+      включающие клиент для хостинг-провайдера на основе имеющегося
+      JSON API и каталог продукции экстерьерного дизайна.
+      Некоторые проекты были реализованы на языке программирования Python~--- примером может послужить
+      асинхронный XML-RPC веб-сервер с использованием Twisted и Wokkel. \\
+
+      В свободное время занимаюсь разработкой открытого ПО. 
+      В основном, это небольшие патчи, например, для проектов
+      \href{https://github.com/square/fest-android/commits?author=ming13}{Android FEST},
+      \href{https://github.com/jdamcd/musicbrainz-android/commits?author=ming13}{MusicBrainz},
+      \href{https://gerrit.libreoffice.org/#/q/owner:%22Artur+Dryomov%22+status:closed,n,z}{LibreOffice Impress},
+      однако, при наличии возможности, я стараюсь продвигать и значительные изменения, примерами
+      которых могут послужить
+      \href{https://github.com/karlseguin/the-little-mongodb-book/pull/16}{сборка The Little MongoDB Book} и
+      \href{https://github.com/keyboardsurfer/Crouton/pulls/ming13?state=closed}{поддержка анимаций и Maven для Crouton}.
+
+
+  \section*{О себе}
+
+    \subsection*{Характеристика}
+
+      Трудолюбив, стараюсь постоянно изучать новое.
+      Мои интересы: разработка мобильных приложений, дизайн
+      взаимодействия, UNIX-подобные операционные системы.
+
+    \subsection*{Подробно}
+
+      Разработка для ОС Android на данный момент является моей основной специализацией.
+      Предпочитаю заниматься дизайном приложений <<с нуля>>, следуя
+      \href{https://developer.android.com/design/}{официальным руководствам}. 
+      Помимо общепринятых рекоммендаций, применяю идеи Джефа Раскина
+      и Алана Купера. Для разработки предпочитаю использовать стек
+      открытых библиотек, основанный на Maven или Gradle (примером является
+      \href{https://github.com/ming13/gambit}{Gambit}). \\
+
+      Являюсь сторонником UNIX-подобных операционных систем,
+      таких как Linux и OS~X. Стараюсь оптимизировать как рабочий процесс,
+      так и разрабатываемые продукты. \\
+
+  \vfill
+
+\end{document}
