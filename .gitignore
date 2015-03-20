@@ -1,0 +1,14 @@
+# TeX
+
+*.aux
+*.fls
+*.log
+*.out
+
+# Documents
+
+*.pdf
+
+# Build system
+
+*.fdb_latexmk
